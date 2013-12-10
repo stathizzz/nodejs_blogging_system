@@ -1,0 +1,2 @@
+ADD comment template to blog engine
+ADD skin

@@ -1,1 +1,0 @@
-ADD comment template to blog engine
