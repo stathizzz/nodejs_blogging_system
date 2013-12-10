@@ -1,0 +1,50 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility !important;
+  font: 14px "Lucida Grande", Helvetica;
+  background-image: url("/images/background.jpeg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+.ghoststory {
+  font-family: GhostStory;
+}
+.biginjapan {
+  font-family: BinInJapan;
+}
+.fatcondensed {
+  font-family: FatCondensed;
+}
+.linky {
+  font-family: Linky;
+}
+footer {
+  background-color: #3e71d0 !important;
+  color: #eee !important;
+  font-size: 11px;
+  padding: 0px;
+}
+.content-body {
+  padding-top: 50px !important;
+}
+@font-face {
+  font-family: BigInJapan;
+  src: url("/fonts/ACBigInJapan/AC-BigInJapan.ttf"), url("/fonts/ACBigInJapan/AC-BigInJapan.otf");
+}
+@font-face {
+  font-family: FatCondensed;
+  src: url("/fonts/ACFatCondensed/AC-FatCondensed_Unicode.ttf"), url("/fonts/ACFatCondensed/AC-FatCondensed_Unicode.otf");
+}
+@font-face {
+  font-family: GhostStory;
+  src: url("/fonts/ACGhostStory/AC-GhostStory.ttf"), url("/fonts/ACGhostStory/AC-GhostStory.otf");
+}
+@font-face {
+  font-family: Linky;
+  src: url("/fonts/ACLinky/AC-Linky.ttf"), url("/fonts/ACLinky/AC-Linky.otf");
+}

@@ -1,0 +1,7 @@
+extends blog-layout
+
+block blog-content
+    h3
+        a(href=poet.helpers.tagUrl(tag)) #{blog_lang.posts_tagged} * #{tag}
+    - each post in posts
+        include blog-postSnippet

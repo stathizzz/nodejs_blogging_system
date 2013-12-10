@@ -1,0 +1,28 @@
+extends ../layout
+
+block content
+    link(href="/stylesheets/blog.css", type="rel/stylesheet")
+    style.
+        .container {
+            margin-top:10em;
+        }
+    .navbar.navbar-fixed-top
+        .navbar-inner
+            .container
+                a.brand(href="/#{blog_name}") #{blog_lang.browse}
+    .wrap
+        .container
+            .row
+                .span8
+                    block blog-content
+                .span12.panel
+                    ul.nav.nav-pills
+                        li.nav.nav-header #{blog_lang.categories}
+                        - each cat in poet.helpers.getCategories()
+                            li
+                                a(href=poet.helpers.categoryURL(cat)) #{cat}
+                    ul.nav.nav-pills
+                        li.nav.nav-header #{blog_lang.tags}
+                        - each tag in poet.helpers.getTags()
+                            li
+                                a(href=poet.helpers.tagURL(tag)) #{tag}

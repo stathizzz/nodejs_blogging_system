@@ -1,0 +1,9 @@
+extends blog-layout
+
+block blog-content
+    h1 #{blog_lang.all_tags}
+    ul
+        - each tag in poet.helpers.getTags()
+            li
+                a(href=poet.helpers.tagUrl(tag)) #{tag}
+

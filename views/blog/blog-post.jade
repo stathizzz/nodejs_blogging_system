@@ -1,0 +1,17 @@
+extends blog-layout
+
+block blog-content
+    - if (post)
+        div.post
+            h1
+                a(href=post.url)
+                    span= post.title
+            - if (post.date && post.date !='Invalid Date')
+                span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+            div.post.content!= post.content
+            div.tags
+                - if (post.tags)
+                    - each tag in post.tags
+                        a(href=poet.helpers.tagUrl(tag))
+                            span.label.label-info #{tag}
+            include blog-comment

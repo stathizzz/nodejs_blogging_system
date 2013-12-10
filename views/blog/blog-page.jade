@@ -1,0 +1,7 @@
+extends blog-layout
+
+block blog-content
+    - if (posts)
+        - each post in posts
+            include blog-postSnippet
+        include blog-pagination

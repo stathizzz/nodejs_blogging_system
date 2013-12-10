@@ -1,0 +1,11 @@
+ul.pagination
+    - var i = 1;
+    - var pageCount = poet.helpers.getPageCount();
+    - while ( i <= pageCount )
+        if page == i
+            li(class='active')
+                a(href=poet.helpers.pageURL(i)) #{i}
+        else
+            li
+                a(href=poet.helpers.pageURL(i)) #{i}
+        - i++;

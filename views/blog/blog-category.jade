@@ -1,0 +1,7 @@
+extends blog-layout
+
+block blog-content
+    h3
+        a(href=poet.helpers.categoryUrl(category)) #{blog_lang.posts_in_categories} * #{category}
+    - each post in posts
+        include blog-postSnippet

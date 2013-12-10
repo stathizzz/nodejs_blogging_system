@@ -1,0 +1,8 @@
+extends blog-layout
+
+block blog-content
+    h1 #{blog_lang.all_categories}
+    ul
+        - each cat in poet.helpers.getCategories()
+            li
+                a(href=poet.helpers.categoryUrl(cat)) #{cat}

@@ -1,0 +1,15 @@
+extends footer
+
+block content
+    div.content-body.container WRITE A MARKDOWN FILE ON THE EDITOR
+        div.row
+            form(method='POST', action='#{url}')
+                div.col-sm-8
+                    include mixins/wysig
+                    mixin wysigEditor()
+        div.row
+            form(method='POST', action='#{url}')
+                div.col-sm-8
+        button.btn.btn-link(type="submit") #{blog_lang.send_reply}
+        div.row
+            div.panel OR UPLOAD A MARKDOWN FILE
